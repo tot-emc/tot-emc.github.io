@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تجربیات ما در تحلیل داده | توسعه تجارت آروند</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap" rel="stylesheet">
+    <script src=" https://kit.fontawesome.com/a076d05399.js " crossorigin="anonymous"></script>
+   </head>
+<body class="persian-text">
+
+<!-- هدر -->
+<header class="main-header">
+    <div class="container header-container">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">خانه</a></li>
+                <li><a href="about.html">درباره ما</a></li>
+                <li><a href="services.html">راهکارهای ما</a></li>
+                <li><a href="case-studies.html" class="active">نمونه‌های اجرایی</a></li>
+                <li><a href="contact.html">تماس با ما</a></li>
+                <li><a href="blog.html">وبلاگ</a></li>
+            </ul>
+        </nav>
+        <div class="header-container">
+            <div class="language-switcher">
+                <a href="#" onclick="changeLanguage('en'); return false;" class="lang-link">EN</a>
+                <span class="lang-separator">|</span>
+                <a href="#" onclick="changeLanguage('fa'); return false;" class="lang-link active">FA</a>
+            </div>
+            <img src="images/logo.jpg" alt="لوگوی سایت" class="logo">
+        </div>
+    </div>
+</header>
+
+<!-- بنر -->
+<section class="hero-slider">
+    <div class="slide active" style="background-image: url('images/data-analytics-banner.jpg');">
+        <div class="slide-content">
+            <h2 class="slide-in-right">تجربیات ما در تحلیل داده و هوش تجاری</h2>
+            <p class="slide-in-left">همراهی با شما در مسیر بهره‌وری بیشتر، تصمیم‌گیری دقیق‌تر و رشد پایدار</p>
+        </div>
+    </div>
+</section>
+
+<!-- بخش نمونه‌های اجرایی - نتایج پروژه‌های تحلیل داده -->
+<section id="data-case-studies" class="case-studies-section">
+    <div class="container">
+        <h2 class="section-title">تجربه های عملی</h2>
+
+       <!-- فیلتر پروژه‌ها -->
+    <div class="case-study-filter">
+        <button class="filter-btn active" data-filter="all">همه نتایج</button>
+        <button class="filter-btn" data-filter="process">بهینه‌سازی فرآیندها</button>
+        <button class="filter-btn" data-filter="bi">هوش تجاری و تحلیل داده</button>
+        <button class="filter-btn" data-filter="ai">پیش‌بینی با هوش مصنوعی</button>
+        <button class="filter-btn" data-filter="market">توسعه بازار و صادرات</button>
+    </div>
+
+        <!-- صفحه 1 -->
+        <div id="page1" class="case-studies-grid">
+
+            <!-- پروژه 1 -->
+            <div class="case-study-item process" data-category="process">
+                <div class="case-study-image">
+                    <img src="images/case-delivery.jpg" alt="بهینه‌سازی فرآیند تحویل">
+                    <div class="case-study-tag"> بهینه‌سازی فرآیند</div>
+                </div>
+                <div class="case-study-content">
+                    <h4>طراحی یک سیستم جریان کار هوشمند برای شرکت توزیع کننده مواد غذایی </h4>
+                    <p>با هدف افزایش شفافیت،کاهش تماس های پشتیبانی و زمان تحویل</p>
+                    <div class="case-study-results">
+                        <div class="result-item">
+                            <span class="result-value">18%</span>
+                            <span class="result-label">کاهش زمان تحویل</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value">23%</span>
+                            <span class="result-label">افزایش رضایت مشتری</span>
+                        </div>
+                    </div>
+                    <div class="result-summary">
+                        <p><strong>راهکار:</strong> بازطراحی فرایند تحویل وایجاد سیستم ردیابی هوشمند</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- پروژه 2 -->
+            <div class="case-study-item bi" data-category="bi">
+                <div class="case-study-image">
+                    <img src="images/case-mining-yazd.jpg" alt="تحلیل داده و ساخت گزارشات داشبوردی مجموعه معدنی استان یزد">
+                    <div class="case-study-tag">هوش تجاری</div>
+                </div>
+                <div class="case-study-content">
+                    <h4>تحلیل داده و ساخت گزارشات داشبوردی مجموعه معدنی استان یزد</h4>
+                    <p>با هدف دسترسی سریع مدیران به گزارشات تحلیلی به‌روز و بهبود تصمیم‌گیری</p>
+                    <div class="case-study-results">
+                        <div class="result-item">
+                            <span class="result-value">90%</span>
+                            <span class="result-label">کاهش خطا و زمان گزارش‌گیری</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value">50%</span>
+                            <span class="result-label">افزایش رضایت مدیران</span>
+                        </div>
+                    </div>
+                    <div class="result-summary">
+                        <p><strong>راهکار:</strong> استفاده از Power BI و SQL برای طراحی داشبوردهای تعاملی و اتصال به داده‌های زنده</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- پروژه 3 -->
+            <div class="case-study-item bi" data-category="bi">
+                <div class="case-study-image">
+                    <img src="images/case-customer-behavior.jpg" alt="هوش تجاری">
+                    <div class="case-study-tag">هوش تجاری</div>
+                </div>
+                <div class="case-study-content">
+                    <h4> بهبود عملکرد فروش با تحلیل رفتار مشتری</h4>
+                    
+                    <p>افزایش نرخ تبدیل با شخصی‌سازی تبلیغات</p>
+                    <div class="case-study-results">
+                        <div class="result-item">
+                            <span class="result-value">27%</span>
+                            <span class="result-label">افزایش نرخ تبدیل</span>
+                        </div>
+                    </div>
+                    <div class="result-summary">
+                        <p><strong>راهکار:</strong> تحلیل قیفی و بهبودتجربه کاربری صفحه پرداخت</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- پروژه 4 -->
+            <div class="case-study-item bi" data-category="bi">
+                <div class="case-study-image">
+                    <img src="images/case-bi.jpg" alt="هوش تجاری">
+                    <div class="case-study-tag">هوش تجاری</div>
+                </div>
+                <div class="case-study-content">
+                    <h4> ساخت سیستم هوش تجاری (BI) برای بهینه‌سازی برنامه‌ریزی و کنترل تولید</h4>
+                    
+                    <p> با هدف تصمیم سازی آگاهانه وافزایش دقت برنامه‌ریزی </p>
+                    <div class="case-study-results">
+                        <div class="result-item">
+                            <span class="result-value">17%</span>
+                            <span class="result-label">کاهش توقفات</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value">11%</span>
+                            <span class="result-label">افزایش دقت برنامه‌ریزی</span>
+                        </div>
+                    </div>
+                    <div class="result-summary">
+                        <p><strong>راهکار:</strong> استفاده از داشبوردهای Power BI  </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- پروژه 5 -->
+            <div class="case-study-item market" data-category="market">
+                <div class="case-study-image">
+                    <img src="images/case-sales-performance.jpg" alt="توسعه بازار">
+                    <div class="case-study-tag">توسعه بازار</div>
+                </div>
+                <div class="case-study-content">
+                    <h4> تحلیل عملکرد فروش واحد تولیدی</h4>
+                    
+                    <p> با هدف تحلیل داده‌های فروش، موجودی، تخفیفات، بازارسنجی و شناسایی گروه مشتریان جدید</p>
+                    <div class="case-study-results">
+                        <div class="result-item">
+                            <span class="result-value">10%</span>
+                            <span class="result-label">افزایش فروش</span>
+                        </div>
+                    </div>
+                    <div class="result-summary">
+                        <p><strong>راهکار:</strong>تحلیل داده‌های فروش، موجودی و تخفیفات با استفاده از XGBoost و داشبوردهای  Power BI و شناسایی گروه‌های هدف جدید </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- پروژه 6 -->
+            <div class="case-study-item process" data-category="process">
+                <div class="case-study-image">
+                    <img src="images/case-inventory-optimization.jpg" alt="بهینه‌سازی فرآیند">
+                    <div class="case-study-tag">بهینه‌سازی فرآیند</div>
+                </div>
+                <div class="case-study-content">
+                    <h4> تحلیل موجودی انبار و بهینه‌سازی سفارش‌دهی</h4>
+                    
+                    <p> با هدف کاهش هزینه‌های انبارداری و بهبود برنامه‌ریزی خرید</p>
+                    <div class="case-study-results">
+                        <div class="result-item">
+                            <span class="result-value">9%</span>
+                            <span class="result-label">کاهش هزینه انبار</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value">16%</span>
+                            <span class="result-label">کاهش توقف تولید</span>
+                        </div>
+                    </div>
+                    <div class="result-summary">
+                        <p><strong>راهکار:</strong> طراحی الگوریتم خودکار برای پیشنهاد سفارش‌ها</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- صفحه 2 -->
+        <div id="page2" class="case-studies-grid" style="display: none;">
+            <!-- پروژه 7 -->
+            <div class="case-study-item bi" data-category="bi">
+                    <div class="case-study-image">
+                    <img src="images/case-railway-hr.jpg" alt="توسعه منابع انسانی با استفاده از تحلیل داده در مجموعه بزرگ راه‌آهن">
+                    <div class="case-study-tag">هوش تجاری و تحلیل داده</div>
+                </div>
+                <div class="case-study-content">
+                    <h4>توسعه منابع انسانی با استفاده از تحلیل داده در مجموعه بزرگ راه‌آهن</h4>
+                    <p>با هدف دسترسی مدیران به اطلاعات کلی پرسنل و بهبود برنامه‌ریزی نیروی انسانی</p>
+                    <div class="case-study-results">
+                        <div class="result-item">
+                            <span class="result-value">80%</span>
+                            <span class="result-label">افزایش سرعت دسترسی به اطلاعات بروز</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value">30%</span>
+                            <span class="result-label">افزایش رضایت مندی پرسنل</span>
+                        </div>
+                    </div>
+                    <div class="result-summary">
+                        <p><strong>راهکار:</strong> طراحی داشبورد تحلیلی منابع انسانی با Power BI و یکپارچه‌سازی با سیستم‌های داخلی</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- پروژه 8 -->
+            <div class="case-study-item bi" data-category="bi">
+                <div class="case-study-image">
+                    <img src="images/case-quality-analysis.jpg" alt="هوش تجاری">
+                    <div class="case-study-tag">هوش تجاری</div>
+                </div>
+                <div class="case-study-content">
+                    <h4> تحلیل داده‌های کیفیت محصول</h4>
+                    
+                    <p>با هدف کاهش عیوب و بهبود کیفی محصولات</p>
+                    <div class="case-study-results">
+                        <div class="result-item">
+                            <span class="result-value">14%</span>
+                            <span class="result-label">کاهش عیوب</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value">15%</span>
+                            <span class="result-label">افزایش دقت برنامه‌ریزی</span>
+                        </div>
+                    </div>
+                    <div class="result-summary">
+                        <p><strong>راهکار:</strong>تحلیل داده‌های کیفیت محصولات با استفاده از Random Forest و داشبوردهای هوشمند Power BI و کاهش معیوبیت و ضایعات </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- پروژه 9 -->
+            <div class="case-study-item bi" data-category="bi">
+                <div class="case-study-image">
+                    <img src="images/case-productivity-comparison.jpg" alt="هوش تجاری">
+                    <div class="case-study-tag">هوش تجاری</div>
+                </div>
+                <div class="case-study-content">
+                    <h4>تحلیل عملکرد واحد تولید و مقایسه با استانداردهای صنعتی</h4>
+                    
+                    <p>با هدف شناسایی نقاط ضعف و بهبود محصول وارتقای توان رقابتی در بازار </p>
+                    <div class="case-study-results">
+                        <div class="result-item">
+                            <span class="result-value">10%</span>
+                            <span class="result-label">افزایش دقت برنامه‌ریزی</span>
+                        </div>
+                    </div>
+                    <div class="result-summary">
+                        <p><strong>راهکار:</strong> استفاده از تحلیل شکاف و تعیین سناریوهای بهینه عملیاتی برای رسیدن به بهره‌وری بالاتر </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- پروژه 10 -->
+            <div class="case-study-item ai" data-category="ai">
+                <div class="case-study-image">
+                    <img src="images/case-customer-satisfaction.jpg" alt="پیش‌بینی با هوش مصنوعی">
+                    <div class="case-study-tag">پیش‌بینی با هوش مصنوعی</div>
+                </div>
+                <div class="case-study-content">
+                    <h4> بهبود رضایت مشتری در یک شرکت خدماتی</h4>
+                    
+                    <p>با هدف کاهش شکایات و بهبود خدمات پس از فروش</p>
+                    <div class="case-study-results">
+                        <div class="result-item">
+                            <span class="result-value">19%</span>
+                            <span class="result-label">کاهش شکایات</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value">14%</span>
+                            <span class="result-label">افزایش رضایت</span>
+                        </div>
+                    </div>
+                    <div class="result-summary">
+                        <p><strong>راهکار:</strong>تبدیل بازخوردها و شکایات مشتریان به بینش‌های عملی با استفاده از تکنولوژی NLP و سیستم‌های تحلیلی Power BI </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- پروژه 11 -->
+            <div class="case-study-item ai" data-category="ai">
+                <div class="case-study-image">
+                    <img src="images/case-social-media.jpg" alt="پیش‌بینی با هوش مصنوعی">
+                    <div class="case-study-tag">پیش بینی با هوش مصنوعی</div>
+                </div>
+                <div class="case-study-content">
+                    <h4>تحلیل نظرات مشتری در شبکه‌های اجتماعی</h4>
+                    <p>با هدف شناسایی نقاط ضعف، بهبود برنامه‌ریزی تبلیغات و افزایش تعامل با مشتریان</p>
+                    <div class="case-study-results">
+                        <div class="result-item">
+                            <span class="result-value">13%</span>
+                            <span class="result-label">کاهش شکایات</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value">سریع‌تر</span>
+                            <span class="result-label">واکنش به بازخورد</span>
+                        </div>
+                    </div>
+                    <div class="result-summary">
+                        <p><strong>راهکار:</strong> استفاده از تحلیل متنی (NLP)، جمع‌آوری خودکار بازخوردها از شبکه‌های اجتماعی و دسته‌بندی آنها بر اساس موضوع و احساس</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- پروژه 12 -->
+            <div class="case-study-item ai" data-category="ai">
+                <div class="case-study-image">
+                    <img src="images/case-food-demand.jpg" alt="پیش‌بینی با هوش مصنوعی">
+                    <div class="case-study-tag">پیش‌بینی با هوش مصنوعی</div>
+                </div>
+                <div class="case-study-content">
+                    <h4> پیش‌بینی تقاضا در صنعت غذایی</h4>
+                    
+                    <p>با هدف کاهش موجودی غیرضرور و افزایش دقت برنامه‌ریزی</p>
+                    <div class="case-study-results">
+                        <div class="result-item">
+                            <span class="result-value">12%</span>
+                            <span class="result-label">کاهش موجودی</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value">10%</span>
+                            <span class="result-label">افزایش دقت پیش‌بینی</span>
+                        </div>
+                    </div>
+                    <div class="result-summary">
+                        <p><strong>راهکار:</strong> استفاده از مدل XGBoost و تلفیق داده‌های فروش منطقه ای برای پیش‌بینی دقیق‌تر و افزایش قدرت رقابت پذیری</p>
+                    </div>
+                </div>
+            </div>          
+        </div>
+
+        <!-- صفحه 3 -->
+        <div id="page3" class="case-studies-grid" style="display: none;">
+            <!-- پروژه 13-->
+            <div class="case-study-item ai" data-category="ai">
+                <div class="case-study-image">
+                    <img src="images/case-inventory.jpg" alt="پیش‌بینی با هوش مصنوعی">
+                    <div class="case-study-tag">پیش‌بینی با هوش مصنوعی</div>
+                </div>
+                <div class="case-study-content">
+                    <h4> پیش‌بینی تقاضا ی محصولات</h4>
+                    <p> با هدف مدیریت بهینه موجودی،کاهش هزینه های انبارداری و زمان تحویل</p>
+                    <div class="case-study-results">
+                        <div class="result-item">
+                            <span class="result-value">11%</span>
+                            <span class="result-label">کاهش هزینه انبار</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value">15%</span>
+                            <span class="result-label"> افزایش دقت پیش‌بینی</span>
+                        </div>
+                    </div>
+                    <div class="result-summary">
+                        <p><strong>راهکار:</strong>بکارگیری الگوریتم یادگیری ماشین LightGBM بر روی داده‌های تاریخی فروش، الگوهای فصلی، تخفیفات و شاخص‌های بازار </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- پروژه 14-->
+            <div class="case-study-item bi" data-category="bi">
+                <div class="case-study-image">
+                    <img src="images/case-fashion-sales.jpg" alt="ساخت داشبورد فروش محصول مجموعه بزرگ فروش پوشاک">
+                    <div class="case-study-tag">هوش تجاری و تحلیل داده</div>
+                </div>
+                <div class="case-study-content">
+                    <h4>ساخت داشبورد فروش محصول مجموعه بزرگ فروش پوشاک</h4>
+                    <p>با هدف دسترسی کاربران به اطلاعات فروش، وضعیت موجودی انبار و بهبود سیستم سفارش</p>
+                    <div class="case-study-results">
+                        <div class="result-item">
+                            <span class="result-value">50%</span>
+                            <span class="result-label">بهبود سرعت سفارش‌دهی</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-value">15%</span>
+                            <span class="result-label">کاهش زمان و خطا در انبارداری</span>
+                        </div>
+                    </div>
+                    <div class="result-summary">
+                        <p><strong>راهکار:</strong> طراحی داشبورد فروش با Power BI و پیاده‌سازی روی اپلیکیشن موبایل</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- پروژه 15-->
+            <div class="case-study-item market" data-category="market">
+            <div class="case-study-image">
+                <img src="images/case-export-to-europe.jpg" alt="ورود به بازار اروپا">
+                <div class="case-study-tag">توسعه بازار</div>
+            </div>
+            <div class="case-study-content">
+                <h4>همراهی با یک شرکت صنایع غذایی در ورود به بازار اروپا</h4>
+                <p>با هدف تحلیل بازار، متناسب‌سازی محصولات و طراحی نقشه راه 6 ماهه برای صادرات</p>
+                <div class="case-study-results">
+                    <div class="result-item">
+                        <span class="result-value">1</span>
+                        <span class="result-label">اولین صادرات انجام‌شده</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-value">3</span>
+                        <span class="result-label">مشتری اولیه در اروپا</span>
+                    </div>
+                </div>
+                <div class="result-summary">
+                    <p><strong>راهکار:</strong>  تحلیل دقیق بازارهای هدف، شناسایی استانداردهای محلی، بهینه‌سازی بسته‌بندی، ارتباط بامشتریان اولیه و ثبت اولین سفارش صادراتی</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <!-- دکمه‌های پیمایش صفحه -->
+        <div class="pagination">
+            <button onclick="showPage(1)" class="btn primary-btn">صفحه 1</button>
+            <button onclick="showPage(2)" class="btn secondary-btn">صفحه 2</button>
+            <button onclick="showPage(3)" class="btn secondary-btn">صفحه 3</button>
+        </div>
+    </div>
+</section>
+
+    <!-- بخش لوگوهای مشتریان با اسکرول -->
+<section class="client-slider-section">
+    <div class="client-slider-wrapper">
+        <div class="client-slider-track">
+            <!-- ردیف اول (برای اسکرول بی‌نهایت) -->
+            <img src="images/client-1.jpg" alt="شرکت حمل ونقل ریلی رجاء">
+            <img src="images/client-2.jpg" alt="شرکت راه آهن جمهوری اسلامی ایران">
+            <img src="images/client-3.jpg" alt="شرکت معدنی کاوش پژوه یزد">
+            <img src="images/client-4.jpg" alt=" شرکت سکنی سازان گستر کویر یزد ">
+            <img src="images/client-5.jpg" alt="شرکت مهندسی الکا آریا">
+            <img src="images/client-6.jpg" alt="ترمه سید حسینی اصیل یزد">
+            <img src="images/client-7.jpg" alt="مجموعه فروشگاه های پوشاک دلارام">
+            <!-- تکرار ردیف برای اسکرول نامحدود بدون وقفه -->
+            <img src="images/client-1.jpg" alt="شرکت حمل ونقل ریلی رجاء">
+            <img src="images/client-2.jpg" alt="شرکت راه آهن جمهوری اسلامی ایران">
+            <img src="images/client-3.jpg" alt="شرکت معدنی کاوش پژوه یزد">
+            <img src="images/client-4.jpg" alt=" شرکت سکنی سازان گستر کویر یزد ">
+            <img src="images/client-5.jpg" alt="شرکت مهندسی الکا آریا">
+            <img src="images/client-6.jpg" alt="ترمه سید حسینی اصیل یزد">
+            <img src="images/client-7.jpg" alt="مجموعه فروشگاه های پوشاک دلارام">
+        </div>
+    </div>
+</section>
+
+
+ <!-- بخش CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>آماده شروع همکاری هستید؟</h2>
+                <p>برای دریافت مشاوره رایگان و بررسی نیازهای کسب‌وکارتان با ما تماس بگیرید</p>
+                <a href="contact.html" class="btn primary-btn">تماس با ما</a>
+                <a href="services.html" class="btn secondary-btn">خدمات ما</a>
+            </div>
+        </div>
+    </section>
+
+
+<script>
+    function showPage(pageNumber) {
+        // مخفی کردن تمام صفحات
+        const pages = document.querySelectorAll('.case-studies-grid');
+        pages.forEach(page => {
+            page.style.display = 'none';  // اول همه را مخفی می‌کنیم
+        });
+
+        // نمایش صفحه مورد نظر با display: grid
+        const currentPage = document.getElementById('page' + pageNumber);
+        if (currentPage) {
+            currentPage.style.display = 'grid';  // حتماً grid باشد
+        }
+
+        // به‌روزرسانی دکمه‌های فعال
+        const pageButtons = document.querySelectorAll('.pagination button');
+        pageButtons.forEach((btn, index) => {
+            if (index + 1 === pageNumber) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+    }
+
+    // نمایش صفحه 1 به صورت پیش‌فرض
+    document.addEventListener('DOMContentLoaded', function () {
+        showPage(1);
+    });
+
+    // فعال کردن دکمه "همه نتایج" هنگام تغییر صفحه
+const filterButtons = document.querySelectorAll('.case-study-filter .filter-btn');
+filterButtons.forEach(btn => {
+    if (btn.dataset.filter === 'all') {
+        btn.classList.add('active');
+    } else {
+        btn.classList.remove('active');
+    }
+});
+
+// همه پروژه‌ها را نمایش بده
+const cards = document.querySelectorAll('.case-study-item');
+cards.forEach(card => {
+    card.style.display = 'block';
+});
+
+    document.addEventListener('DOMContentLoaded', function () {
+        console.log('DOM آماده شد');
+        console.log('آیا page3 وجود دارد؟', document.getElementById('page3'));
+        
+        // نمایش صفحه 1
+        showPage(1);
+    });
+
+    function showPage(pageNumber) {
+        console.log('در حال نمایش صفحه:', pageNumber);
+        
+        const page = document.getElementById('page' + pageNumber);
+        if (page) {
+            document.querySelectorAll('.case-studies-grid').forEach(p => {
+                p.style.display = 'none';
+            });
+            page.style.display = 'grid';
+            console.log('صفحه', pageNumber, 'نمایش داده شد');
+        } else {
+            console.error('❌ صفحه', pageNumber, 'وجود ندارد!');
+        }
+    }
+
+
+    // تبدیل اعداد انگلیسی به فارسی
+    function convertEnglishNumbersToPersian() {
+        const translate = (str) => {
+            const englishNumbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+            const persianNumbers = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
+            return str.replace(/\d/g, (digit) => persianNumbers[digit]);
+        };
+
+        const elements = document.body.getElementsByTagName('*');
+        const skipTags = ['SCRIPT', 'STYLE', 'TEXTAREA', 'INPUT', 'NOSCRIPT'];
+
+        Array.from(elements).forEach(element => {
+            if (skipTags.includes(element.tagName)) return;
+            Array.from(element.childNodes).forEach(node => {
+                if (node.nodeType === Node.TEXT_NODE) {
+                    const newText = translate(node.textContent);
+                    if (newText !== node.textContent) {
+                        node.textContent = newText;
+                    }
+                }
+            });
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', convertEnglishNumbersToPersian);
+</script>
+</body>
+</html>

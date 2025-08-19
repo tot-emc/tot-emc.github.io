@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>دریافت چک‌لیست رایگان | TOT-EMC</title>
+  <meta name="description" content="چک‌لیست تشخیص ۱۰ نقطه ضعف در خط تولید را رایگان دریافت کنید.">
+  
+  <!-- Style -->
+  <link rel="stylesheet" href="/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* استایل اختصاصی صفحه لندینگ */
+    .checklist-hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: #0d47a1;
+      color: white;
+      margin-bottom: 60px;
+    }
+    .checklist-hero h1 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      font-weight: 900;
+    }
+    .checklist-hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.8;
+    }
+
+    .checklist-form-container {
+      max-width: 600px;
+      margin: 0 auto 60px;
+      padding: 30px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #0d47a1;
+    }
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1rem;
+    }
+    .form-group input:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: #0d47a1;
+    }
+
+    .submit-btn {
+      background: #0d47a1;
+      color: white;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.3s ease;
+    }
+    .submit-btn:hover {
+      background: #0a3a8c;
+    }
+
+    .checklist-footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="checklist-hero">
+  <h1>آیا خط تولید شما این ۱۰ مشکل را دارد؟</h1>
+  <p>
+    چک‌لیست تشخیص نقاط ضعف در خط تولید را رایگان دریافت کنید و بفهمید چگونه می‌توانید بهره‌وری، کیفیت و سودآوری خود را بهبود بخشید.
+  </p>
+</section>
+
+<!-- Form Section -->
+<section class="checklist-form-container">
+  <h2 style="text-align:center; color:#0d47a1; margin-bottom:30px;">اطلاعات خود را وارد کنید</h2>
+
+  <!-- فرم بدون action - ارسال با JavaScript -->
+  <form id="checklistForm">
+    <div class="form-group">
+      <label for="fullname">نام و نام خانوادگی *</label>
+      <input type="text" id="fullname" name="fullname" required>
+    </div>
+
+    <div class="form-group">
+      <label for="company">نام شرکت *</label>
+      <input type="text" id="company" name="company" required>
+    </div>
+
+    <div class="form-group">
+      <label for="sector">حوزه فعالیت شرکت *</label>
+      <select id="sector" name="sector" required>
+        <option value="">انتخاب کنید</option>
+        <option value="فولاد و متالورژی">فولاد و متالورژی</option>
+        <option value="سیمان و ساختمانی">سیمان و ساختمانی</option>
+        <option value="پتروشیمی و پلاستیک">پتروشیمی و پلاستیک</option>
+        <option value="مواد غذایی">مواد غذایی</option>
+        <option value="الکترونیک و برق">الکترونیک و برق</option>
+        <option value="دارو و بهداشتی">دارو و بهداشتی</option>
+        <option value="لوازم خانگی">لوازم خانگی</option>
+        <option value="سایر">سایر</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">شماره موبایل *</label>
+      <input type="tel" id="phone" name="phone" placeholder="مثال: 09123456789" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">ایمیل (اختیاری)</label>
+      <input type="email" id="email" name="email">
+    </div>
+
+    <button type="submit" class="submit-btn">دریافت چک‌لیست رایگان</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="checklist-footer">
+  &copy; 2025 TOT-EMC - تمامی حقوق محفوظ است.
+</footer>
+
+<!-- اسکریپت ارسال فرم و هدایت به صفحه دانلود -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('checklistForm');
+    
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault(); // جلوگیری از ارسال پیش‌فرض
+
+        const formData = new FormData(form);
+
+        // ارسال به Formspree
+        fetch('https://formspree.io/f/xovlzkdq', {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        })
+        .then(response => {
+          if (response.ok) {
+            // هدایت به لینک دانلود مستقیم (جایگزین thank-you.html)
+            window.location.href = 'https://drive.google.com/uc?export=download&id=1JqMVf7nidJmjXf7nsFZOxDcVfG7C82ap';
+          } else {
+            alert('خطا در ارسال فرم. لطفاً دوباره تلاش کنید.');
+          }
+        })
+        .catch(error => {
+          // در صورت خطا، باز هم لینک دانلود داده شود
+          window.location.href = 'https://drive.google.com/uc?export=download&id=1JqMVf7nidJmjXf7nsFZOxDcVfG7C82ap';
+        });
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
